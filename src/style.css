@@ -1,0 +1,15 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    
+    
+}
+.loginBody{
+    width:400px;
+    border:2px solid red ;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
