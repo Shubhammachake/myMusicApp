@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
-import Nav from "./nav";
-import { useEffect, useState } from "react";
 
+import { useEffect, useState } from "react";
+import Nav from "./Nav";
 import { useSelector } from "react-redux";
 
 export default function Products() {
