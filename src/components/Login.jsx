@@ -84,6 +84,7 @@ function Login() {
                   placeholder="Enter Email"
                   variant="outlined"
                   style={{ width: "300px" }}
+                  className="loginField"
                 />
                 <ErrorMessage
                   name="email"

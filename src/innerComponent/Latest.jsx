@@ -33,7 +33,7 @@ function Latest() {
   // console.log("TRACK DATA", topTracks);
 
   return (
-    <div>
+    <div className="lengthy">
       <h1 className="head">Top Tracks</h1>
       <div className="grid-container">
         {topTracks.map((track, index) => (

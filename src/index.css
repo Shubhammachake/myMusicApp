@@ -32,8 +32,10 @@ body{
   background-color: rgb(60, 3, 125);
   height:70px;
   display:flex;
- 
   align-items: center;
+  justify-content: space-around;
+
+  
 }
 
 #title{
@@ -41,7 +43,7 @@ body{
   margin-left: 30px;
   font-size:30px;
   color: orange;
-  margin-right: 40px;
+  margin-right:20px;
 }
 .login{
   display: flex;
@@ -67,27 +69,28 @@ body{
   width:100%;
   border-radius: 10px;
 }
-.a{
-  width:800px;
+/* .a{
   
+  border:2px solid red;
   display: flex;
-  
+  justify-content: space-around;
   align-items: center;
-}
+} */
 .links{
   text-decoration: none;
   color:white;
-  margin-left: 30px;
+  
 
 }
-.b{
+/* .b{
   width:370px;
  
   display: flex;
-  margin-left: 150px;
+  
   align-items: center;
-  justify-content: space-between;
-}
+  
+  border: 2px solid red;
+} */
 .error-message {
   color: rgb(234, 104, 104);
   font-size: 0.875rem; /* Adjust font size as needed */
@@ -145,7 +148,7 @@ body{
   margin: auto;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap:20px;
+  gap:10px;
 }
 .grid-item {
   border: 1px solid #ccc;
@@ -194,8 +197,9 @@ img {
 
 }
 .watchHistory{
-  border: 2px solid red;
-  display:flex
+ 
+  display:flex;
+  margin-top: 50px;
 }
 .child{
   border: 2px solid red;
@@ -204,4 +208,248 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.searchInput{
+  width:100px;
+}
+
+.logoutButton{
+  margin-left: 30px;
+
+}
+@media (min-width: 768px) and (max-width: 1023px){
+  .loginBody,.login,.watchCont{
+    width:auto;
+    
+  }
+  #nav{
+    width:auto
+  }
+  .grid-container,.grid-item,.lengthy{
+    width:auto
+  }
+  
+  .loginField,.btn{
+   width:auto
+  } 
+  .grid-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: auto;
+  }
+  .b{
+    width:auto;
+  }
+  .searchInput{
+    width: auto;
+  }
+  .logoutButton{
+    width:auto;
+    font-size:5px;
+  }
+  .cont{
+    width: auto;
+  }
+  .user{
+    width: auto;
+  }
+}
+@media (max-width: 768px){
+  .loginBody,.login,.watchCont{
+    width:auto;
+    
+    
+  }
+  .loginField,.btn{
+    width:auto
+   } 
+   #nav{
+    width:auto;
+    gap:5px
+   }
+   .grid-container,.grid-item,.lengthy{
+    width:auto;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .grid-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: auto;
+  }
+  .logoutButton{
+    width:auto;
+    font-size: 5px;
+  }
+  .links{
+    font-size:10px;
+  }
+  .title{
+    font-size:5px;
+  }
+  .cont{
+    width: auto;
+  }
+  .user{
+    width: auto;
+  }
+  
+  .logoutButton{
+    width:auto;
+  }
+
+}
+@media (min-width:280px){
+  /* .loginBody,.login,.watchCont{
+    width:auto
+  } */
+  .loginField,.btn{
+    width:auto
+   } 
+   
+   
+}
+@media (max-width:568px){
+  .loginBody,.login,.watchCont{
+    width:auto
+  }
+  .loginField,.btn{
+    width:auto
+   } 
+   .grid-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: auto;
+  }
+  #nav{
+    width:auto
+  }
+  .links{
+    font-size: 5px;
+    
+  }
+  #title{
+    font-size: 15px;
+  }
+  #logoutButton{
+    width:auto;
+    font-size: 5px;
+    margin-right: 10px;
+  }
+  .grid-item{
+    width:auto
+  }
+  .cont{
+    width: auto;
+  }
+  .user{
+    width: auto;
+  }
+}
+@media (max-width:375px) {
+  .loginBody,.login,.watchCont{
+    width:auto
+  }
+  .loginField,.btn{
+    width:auto
+   } 
+   .grid-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: auto;
+  }
+  #nav{
+    width:auto
+  }
+  .links{
+    font-size: 5px;
+    
+  }
+  #title{
+    font-size: 15px;
+  }
+  #logoutButton{
+    width:auto;
+    font-size: 5px;
+    margin-right: 10px;
+  }
+  .grid-item{
+    width:auto
+  }
+  .cont{
+    width: auto;
+  }
+  .user{
+    width: auto;
+  }
+}
+@media(max-width:390px){
+  .loginBody,.login,.watchCont{
+    width:auto
+  }
+  #nav{
+    width:auto
+  }
+  .links{
+    font-size: 5px;
+    
+  }
+  #title{
+    font-size: 15px;
+  }
+  #logoutButton{
+    width:auto;
+    font-size: 5px;
+    margin-right: 10px;
+  }
+  .grid-item{
+    width:auto
+  }
+  .grid-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: auto;
+  }
+  .cont{
+    width: auto;
+  }
+  .user{
+    width: auto;
+  }
+  
+}
+@media(max-width:430px){
+  .loginBody,.login,.watchCont{
+    width:auto
+  }
+  #nav{
+    width:auto
+  }
+  .links{
+    font-size: 5px;
+    
+  }
+  #title{
+    font-size: 15px;
+  }
+  #logoutButton{
+    width:auto;
+    font-size: 5px;
+    margin-right: 20px;
+  }
+  .grid-item{
+    width:auto
+  }
+  .grid-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: auto;
+  }
+  .cont{
+    width: auto;
+  }
+  .user{
+    width: auto;
+  }
+  
 }
